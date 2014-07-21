@@ -22,7 +22,7 @@
  */
 
 #define LOG_TAG "binder_demo"
-
+#define LOGD ALOGD
 /* For relevant code see:
     frameworks/base/{include,libs}/binder/{IInterface,Parcel}.h
     frameworks/base/include/utils/{Errors,RefBase}.h
@@ -30,9 +30,9 @@
 
 #include <stdlib.h>
 
-#include "utils/RefBase.h"
-#include "utils/Log.h"
-#include "utils/TextOutput.h"
+#include <utils/RefBase.h>
+#include <utils/Log.h>
+#include <binder/TextOutput.h>
 
 #include <binder/IInterface.h>
 #include <binder/IBinder.h>
